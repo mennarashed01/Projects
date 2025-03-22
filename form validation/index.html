@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+        <input type="text" placeholder="enter your name" id="name">
+        <input type="email" placeholder="enter your email" id="email">
+        <input type="number" placeholder="enter your card number" id="number">
+        <input type="date" name="date" id="date">
+        <input type="text" placeholder="enter your CVV" id="cvv">
+        <input type="submit" id="submitbutton">
+    </form>
+    <div id="successMessage"></div>
+    <script>
+        document.getElementById("submitbutton").onclick = function () 
+        {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const number = document.getElementById("number").value.trim();
+            const cvv = document.getElementById("cvv").value.trim();
+            const successMessage = document.getElementById("successMessage");
+
+            successMessage.textContent = '';
+            if (!name || !email || !password || !number || !cvv || !successMessage)
+            {
+                alert("all felids required");
+                return;
+            }
+            if ( number != 16)
+            {
+                alert("enter valid length (16 digit)");
+                return;
+            }
+            if ( cvv != 3 )
+            {
+                alert("enter valid length (3 digit)");
+                return;
+            }
+
+            successMessage.textContent = 'felids submitted successfully!';
+        };
+    </script>
+</body>
+</html>

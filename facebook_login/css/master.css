@@ -1,0 +1,133 @@
+
+* {
+    text-transform: capitalize;
+}
+body {
+    align-items: flex-start;
+}
+.content {
+    height: auto;
+    width: 450px;
+    margin-bottom: 20px;
+    padding: 15px
+}
+.container .content .title {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+}
+.container .content .title h2 {
+    margin: 5px;
+}
+.container .content .title h4 {
+    margin: 10px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 200;
+}
+.container .content .title h4::after {
+    content: '';
+    height: 1px;
+    width: 450px;
+    background-color: #1111113f;
+    position: absolute;
+    top: 105%;
+    left: -20px;
+}
+.container .content .form .name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .form .name input {
+    width: calc((100% - 10px)/2);
+}
+.container .content .form .birth {
+    width: 100%;
+}
+.container .content .form .birth .birth-title ,
+.container .content .form .gender .gender-title{
+    text-align: left;
+    padding-left: 0;
+    font-size: 12px;
+    color: #111111bb;
+}
+.container .content .form .birth .birth-title a {
+    text-decoration: none;
+    color: #111111bb;
+    border: 1px solid;
+    width: 10px;
+    height: 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.container .content .form .birth select {
+    width: calc((100% - 10px )/3);
+    padding: 6px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container .content .form .gender .gender-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .form .gender .gender-content div {
+    width: calc((100% ) /3);
+    border: 1px solid ;
+    padding: 2PX 8px;
+    margin: 5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .content .form .gender div input {
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    background-color: red;
+}
+.container .content .form .gender div label {
+    align-self: center;
+}
+.container .content .form .polices {
+    font-size: 10px;
+    text-align: left;
+    color: #11111198;
+}
+.container .content .form .polices a {
+    text-decoration: none;
+}
+.container .content .form .submit {
+    width: 50%;
+    padding: 5px 10px;
+    margin: auto;
+}
+.container .content .form .submit input {
+    color: #fff;
+    background-color: rgb(32, 181, 32);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+.container .content .form .have-acc {
+    width: 100%;
+    text-align: center;
+}
+.container .content .form .have-acc a {
+    text-decoration: none;
+    color: #0866ff;
+    font-size: 15px;
+}

@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.logo h1 {
+    text-align: center;
+    color: #0866ff;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.content {
+    background-color: #fff;
+    width: 350px;
+    height: 390px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px #11111147, 
+                -1px -1px 3px 3px #1111113a;
+}
+.content p {
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+}
+.content .form input {
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    margin: 10px 0;
+    border: transparent;
+    box-shadow: 1px 1px 2px 1px #11111142;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.content .form input.submit {
+    color: white;
+    background-color: #0866ff;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 9px;
+}
+.content .forget-acc {
+    text-align: center;
+    padding: 10px;
+}
+.content .forget-acc a {
+    text-decoration: none;
+    color: #0866ff;
+    font-size: 14px;
+}
+.content .forget-acc a:hover {
+    text-decoration: underline;
+}
+.content .hr {
+    text-align: center;
+    color: #1111117d;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: relative;
+}
+.content .hr::before {
+    content: '';
+    width: 150px ;
+    height: 1px;
+    background-color: #1111117d;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+}
+.content .hr::after {
+    content: '';
+    width: 150px ;
+    height: 1px;
+    background-color: #1111117d;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+}
+.content .button {
+    width: 60%;
+    margin: 5px auto;
+}
+.content .button button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #42b72a;
+    border: transparent;
+
+}
+.content button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
